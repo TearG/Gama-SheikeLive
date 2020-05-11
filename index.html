@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Aluguéis por Temporada, Acomodações, Experiências e Lugares - Sheike Live
+    </title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="logo.png"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4b9780a374.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <a href="">
+          <div class="header__logo">
+              <img class="logotipo" src ="logo.png"/>
+           
+          </div>
+        </a>
+
+        <div class="header__info">
+          <div class="header__info--place">Quer se sentir como um Sheike? 
+            Aqui você encontra os melhores lugares!</div>
+          </div>
+        </div>
+
+       
+        </a>
+      </header>
+
+      <div class="info">
+        <p style = color:#666600>Mais de 300 acomodações · 11 de mai. - 30 de jun.</p>
+
+
+        <div class="info__orders">
+          <button class="info__orders--button" onclick="orderByNameAZ()">
+            A-Z
+          </button>
+
+          <button class="info__orders--button" onclick="orderByNameZA()">
+            Z-A
+          </button>
+
+          <button class="info__orders--button" onclick="orderByType()">
+            Tipo
+          </button>
+
+          <button class="info__orders--button" onclick="orderByPriceCrescent()">
+            Menor Valor
+          </button>
+
+          <button
+            class="info__orders--button"
+            onclick="orderByPriceDecreasing()"
+          >
+            Maior Valor
+          </button>
+
+          <input
+            id="searchInput"
+            class="info__orders--button"
+            onkeyup="handleSearch()"
+            placeholder="Pesquise seu imóvel"
+          />
+        </div>
+      </div>
+
+      <div id="cards">
+      
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="backToTop">
+        <a href="#">Voltar ao topo</a>
+      </div>
+
+        </a>
+      </div>
+
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
